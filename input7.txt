@@ -1,0 +1,8 @@
+{   %  y  ,  x  ;
+begin
+    x  :=  10  ;   
+    if  (  x  )  begin  
+        writeln  (  x  )  ;
+    end  ;
+end
+}

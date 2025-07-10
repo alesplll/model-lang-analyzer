@@ -1,0 +1,16 @@
+{   %  xa  ;
+    %  y  ,  x  ;
+    !  z  ;
+    /*  ab  abab  */
+begin
+    x  :=  10  ;                    /*  if remove ";"  from line  */
+    if  (  x  >=  5  )  begin  
+        writeln  (  x  )  ;
+    end 
+    else  begin
+        y  :=  2  ;  
+    end  ;
+end
+}
+
+

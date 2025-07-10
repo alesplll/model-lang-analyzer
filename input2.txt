@@ -1,0 +1,27 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{   %  counter  ;  %  limit  ;  %  result  ;
+begin
+    counter  :=  0  ;  limit  :=  10  ;
+    result  :=  1  ;
+    while  (  counter  <  limit  )  
+        counter  :=  counter  +  1  ;
+        result  :=  result  *  counter  ;
+    end  ;     writeln  (  result  )  ;                
+end
+}
