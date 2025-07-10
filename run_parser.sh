@@ -14,13 +14,13 @@ INPUT_FILE="src/$1"
 TOKEN_FILE="src/lecsems2.txt"
 
 # Проверка существования входного файла
-if [ ! -f "src/$INPUT_FILE" ]; then
+if [ ! -f "$INPUT_FILE" ]; then
     echo "Ошибка: Файл '$INPUT_FILE' не найден."
     exit 1
 fi
 
 # Запуск лекcера
-python src/lecser2.py "$src/INPUT_FILE"
+python src/lecser2.py "$/INPUT_FILE"
 LEXER_EXIT_CODE=$?
 
 if [ $LEXER_EXIT_CODE -ne 0 ]; then
@@ -28,13 +28,13 @@ if [ $LEXER_EXIT_CODE -ne 0 ]; then
 fi
 
 # Проверка существования файла токенов
-if [ ! -f "src/$TOKEN_FILE" ]; then
+if [ ! -f "$TOKEN_FILE" ]; then
     echo "Ошибка: Файл токенов '$TOKEN_FILE' не найден."
     exit 1
 fi
 
 # Запуск парсера
-python src/parser2.py "src/$TOKEN_FILE"
+python src/parser2.py "$TOKEN_FILE"
 PARSER_EXIT_CODE=$?
 
 if [ $PARSER_EXIT_CODE -ne 0 ]; then
